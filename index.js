@@ -29,6 +29,7 @@ app.use((req, res, next) => {
   res.locals.messages = req.flash("success") //* responseオブジェクトにあるlocalsオブジェクトには一回のライフスタイル
   //* これをやることでどこでもテンプレで呼び出せる
   //* つまり messages: req.flash("success") をいちいち渡さなくていい
+
   next()
 })
 
